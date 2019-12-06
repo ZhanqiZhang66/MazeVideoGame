@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9070522019106293135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9070522019106293128}
+  - component: {fileID: 9070522019106293129}
+  m_Layer: 0
+  m_Name: Maze_Generator
+  m_TagString: MazeGenerator
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9070522019106293128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070522019106293135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9070522019106293129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070522019106293135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b37ad89110630644a31820bd9c4425c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nav_object: {fileID: 0}
+  grid: {fileID: 0}
+  DarkMap: {fileID: 0}
+  BlurredMap: {fileID: 0}
+  GameMap: {fileID: 0}
+  BackgroundMap: {fileID: 0}
+  DarkTile: {fileID: 11400000, guid: e94ecef9b0bc1c7428c9cbe755a47ab4, type: 2}
+  BlurredTile: {fileID: 11400000, guid: 4d4dac6824ba74eb8ad5cd99a5f7d9ae, type: 2}
+  BackgroundTile: {fileID: 11400000, guid: c5ae7e462eac89546a1a9b03cb41ead6, type: 2}
+  walls:
+  - {fileID: 11400000, guid: 7a5a35409ab20cb44accf6f27280342f, type: 2}
+  - {fileID: 11400000, guid: c36ed6e57db63e643aca3f9d5f7682b5, type: 2}
+  - {fileID: 11400000, guid: d98ca93842c1b2c4fbfc0e2b70f2ccf6, type: 2}
+  gates:
+  - {fileID: 11400000, guid: 3258f47355f846e4296005d929ef0015, type: 2}
+  - {fileID: 11400000, guid: 54f704fed7aecc44da6d026786f3bc63, type: 2}
+  - {fileID: 11400000, guid: 00ea372df8bc58a4b8e19760b38b674d, type: 2}
+  - {fileID: 11400000, guid: 6c010775dcec49e40ab3ae191c035222, type: 2}
+  items: []
+  size: 20
+  num_keys: 1
+  num_spawners: 5
+  num_oxygens: 25
+  spawn_timer: 1
+  boss_mass: 0
+  boss_dmg: 0
+  boss_speed: 0
+  boss_bounceback: 0
+  mob_mass: 0
+  mob_speed: 2
+  mob_lifetime: 5
+  key: {fileID: 8687836377439320391, guid: 4187bf8433f954050a96966bde1174e1, type: 3}
+  goal: {fileID: 6501459930782754968, guid: 9c752d13275984245b973a3233519de0, type: 3}
+  spawner: {fileID: 8936785054417962725, guid: 27242c12cc82d5842848ff4e88af52f0, type: 3}
+  oxygen: {fileID: 7096570278012235141, guid: 1d02c57d3686546ca9451565fa224c4f, type: 3}
+  boss: {fileID: 1543278732466589283, guid: 02dec8f855b9f4fda87832310b60459b, type: 3}
